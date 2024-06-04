@@ -1,0 +1,113 @@
+@import "../styles/theme";
+
+.Home {
+  text-align: center;
+  color: $primary;
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: normal;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 1.75rem;
+    font-weight: normal;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  .heading-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(20vw + 20vh);
+    min-height: 15rem;
+    max-height: 25rem;
+    background: url("../assets/home/light-bouquet.jpeg") bottom / cover;
+  }
+
+  .heading-container {
+    padding: 1rem 2rem;
+    border: 1px solid $primary-light;
+    border-radius: 0.125rem;
+    box-shadow: 0 0 1rem $primary-light;
+    background-color: #ffffffd0;
+  }
+
+  .trends-section {
+    background: linear-gradient(to bottom, white, $primary-light);
+  }
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 26rem;
+    max-width: 100%;
+    margin: 0 auto 2rem;
+
+    img {
+      object-fit: cover;
+      transition: filter 0.25s;
+    }
+
+    img:hover {
+      filter: brightness(1.05);
+    }
+  }
+
+  .wide-image {
+    width: 17rem;
+    height: 8rem;
+  }
+
+  .square-image {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .history-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(20vw + 20vh);
+    min-height: 15rem;
+    max-height: 25rem;
+    background: url("../assets/home/flower-basket.jpeg") center / cover;
+    filter: brightness(1.1);
+  }
+
+  .history-container {
+    padding: 1rem 2rem;
+    border: 1px solid $secondary-light;
+    border-radius: 0.125rem;
+    box-shadow: 0 0 1rem $secondary-light;
+    background-color: #ffffffd0;
+    color: $secondary-dark;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .events-section {
+    background: linear-gradient(to bottom, white, transparentize($secondary-light, 0.5));
+    color: $secondary;
+
+    img {
+      width: 17rem;
+      margin-bottom: 2rem;
+    }
+  }
+}

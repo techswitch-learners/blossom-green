@@ -1,0 +1,12 @@
+@import "../styles/theme";
+
+footer {
+  padding: 1rem;
+  background-color: $secondary-light;
+  text-align: center;
+  color: $secondary-dark;
+
+  p {
+    margin: 0;
+  }
+}
